@@ -1,0 +1,160 @@
+/*header宽1060px，高度200px，水平居中显示，边框1px solid red
+  nav 宽度1060px，高度50px，水平居中显示，边框
+  section 宽度1060px，高度650px，水平居中显示，边框
+  aside  宽度280px，高度280px  边框
+  #main   宽度770px，高度650px 边框
+*/
+header,nav,section{
+	width:1060px;
+	margin:0px auto;
+}
+header{
+	height:200px;
+	margin-top:70px;
+	background:url(images/cover.jpg) no-repeat;
+}
+nav{
+	height:50px;
+	background:#fff;
+	margin-bottom:10px;
+}
+section{
+	height:650px;
+}
+aside{
+	width:280px;
+	height:280px;
+	float:left;
+	background:#fff;
+}
+#main{
+	width:770px;
+	height:650px;
+	float:right;
+}
+body{
+	background:#3e2816 url(images/body_bg_page.jpg) no-repeat;
+}
+/*menu的设置*/
+#menu{
+	/*取消默认内外边距，宽度755px，水平居中，去掉列表标识符，加边框效果*/
+	padding:0px;
+	width:755px;
+	margin:0px auto;
+	list-style:none;
+}
+#menu li{
+	/*左浮动，宽度150px，左右外边距50px，文字水平垂直居中*/
+	float:left;
+	width:150px;
+	margin:0px 50px;
+	text-align:center;
+	line-height:50px;
+}
+#menu li a{
+	/*去掉下划线，字体颜色#333，字体大小18px*/
+	text-decoration:none;
+	color:#333;
+	font-size:18px;
+}
+#menu li.current{
+	/*下边框4px solid red，字体加粗*/
+	border-bottom:4px solid red;
+	font-weight:bold;
+	line-height:46px;
+}
+#menu li:hover{
+	border-bottom:4px solid red;
+	line-height:46px;
+}
+#func_tree{
+	/*去掉列表标识符,内边距5px，内容水平居中*/
+	list-style:none;
+	padding:5px;
+	margin:0px auto;
+}
+#func_tree li{
+	/*高度50px，下边框1px solid #f2f2f5 左内边距30px*/
+	height:50px;
+	border:1px solid #f2f2f5;
+	padding-left:30px;
+}
+#func_tree li.current,#func_tree li:hover{
+	background-color:#f2f2f5;
+}
+#func_tree li a{
+	/*文字垂直居中，字体大小18px，去掉下划线，字体颜色#333*/
+	line-height:50px;
+	font-size:18px;
+	text-decoration:none;
+	color:#333;
+}
+#func_tree li span{
+	font-weight:bold;
+	margin-left:10px;
+}
+#func_tree li a b{
+	/*加宽和高，引入图片*/
+	float:left;
+	width:20px;
+	height:20px;
+	background:url(images/photo_icon.png) no-repeat;
+	margin-top:15px;
+	margin-right:10px;
+}
+#func_tree li a b.zans{
+	background-position:-20px 0px;
+}
+#func_tree li a b.hots{
+	background-position:-40px 0px;
+}
+#func_tree li a b.albums{
+	background-position:-70px 0px;
+}
+aside p{
+	/*行高30px,字体大小18px，文字水平居中*/
+	line-height:30px;
+	font-size:18px;
+	text-align:center;
+}
+aside p a{
+	text-decoration:none;
+	color:#333;
+}
+aside p span{
+	font-weight:bold;
+	margin-left:10px;
+}
+#main ul{
+	/*去掉列表标识符，宽度245px，去掉默认内外边距，右浮动，左外边距10px*/
+	list-style:none;
+	width:245px;
+	margin:0px;
+	padding:0px;
+	float:right;
+	margin-left:10px;
+}
+#main ul li{
+	/*背景颜色为白色#fff,边框1px solid #333，边框倒角5px，图片水平居中，下外边距15px*/
+	background-color:#fff;
+	border:1px solid #333;
+	border-radius:5px;
+	text-align:center;
+	margin-bottom:15px;
+}
+#main ul li img{
+	/*宽度230px;上外边距10px*/
+	width:230px;
+	margin-top:10px;
+}
+#main ul li h6{
+	/*上下外边距设置为5px，左右外边距10px，文字靠左显示，字体取消加粗*/
+	margin:5px 10px;
+	text-align:left;
+	font-weight:normal;
+}
+#main ul li:hover{
+	position:relative;
+	left:-3px;
+	top:-3px;
+}
